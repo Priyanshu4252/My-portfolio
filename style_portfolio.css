@@ -1,0 +1,261 @@
+*{
+    padding: 15px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:sans ;
+    src: url(font/BBHSansBartle-Regular.ttf);
+}
+@font-face {
+    font-family: colage;
+    src: url(font/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf);
+}
+@font-face {
+    font-family: bit;
+    src: url(font/BitcountGridSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+@font-face {
+    font-family: caveat;
+    src: url(font/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: michroma;
+    src: url(font/Michroma-Regular.ttf);
+}
+@font-face {
+    font-family: momo;
+    src: url(font/MomoSignature-Regular.ttf);
+}
+@font-face {
+    font-family: sixtyfour;
+    src: url(font/Sixtyfour-Regular-VariableFont_BLED\,SCAN.ttf);
+}
+body{
+    background-color: rgb(188, 196, 203);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h1{ 
+    text-align: center;
+    font-family: caveat,Arial, Helvetica, sans-serif;
+    font-size: 50px;    
+}
+p{
+    font-family: colage ,Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+#d1{
+    background-color: rgba(130, 150, 185, 0.437);
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: 3px 3px 5px;
+}
+.language_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+h2{
+    font-family: michroma,Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.cpp,.c,.python,.HTML,.CSS{
+    font-size: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(52, 58, 64);
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(52, 58, 64);
+    color: white;
+    background-color: rgb(52, 58, 64);
+    height: 250px;
+    width:200px ;
+    transition: transform 0.3s ease-in-out;
+}
+.cpp:hover,.c:hover,.python:hover,.HTML:hover,.CSS:hover{
+    transform: scale(1.1);
+    border-color: aqua;
+    border-width: 4px;
+}
+h3{
+    font-family: momo,Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 250px;
+}
+
+#d6,#d7,#d8{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height:560px;
+    width: 960px;
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: 3px 3px 5px black;
+    color: white;
+}
+.hobbies_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#hobby_header,#language_header{
+    background-color: rgb(188, 196, 203);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+}
+.music{
+    position: relative;
+    overflow: hidden;  
+    border-radius: 20px;
+    background-image: url(images/linkin_park.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: transform ease-in-out 0.1s;
+    height: 350px;
+}
+.music:hover {
+    transform: scale(1.03);
+}
+.music:hover h3, .music:hover p{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.linkin_park_video{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    z-index: 1; 
+    border: solid aqua;
+    border-radius: 20px;
+    border-width: 4px;
+    padding: 0;
+}
+.music:hover .linkin_park_video{
+    opacity: 1;
+    transition: opacity 0.2s ease-in;  
+}
+.esport{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url(images/t1_LOL.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: transform ease-in-out 0.1s;
+    height: 350px;
+}
+.esport:hover {
+    transform: scale(1.05);
+}
+.esport:hover h3, .esport:hover p{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.t1{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    z-index: 1; 
+    border: solid aqua;
+    border-radius: 20px;
+    border-width: 4px;
+    padding: 0;
+}
+.esport:hover .t1{
+    opacity: 1;
+    transition: opacity 0.2s ease-in; 
+     
+}
+.sport{
+    background-image: url(images/sport.avif);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: transform ease-in-out 0.1s;
+    height: 350px;
+}
+.sport:hover {
+    transform: scale(1.05);
+}
+.sport:hover h3, .sport:hover p{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.ind{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    z-index: 1; 
+    border: solid aqua;
+    border-radius: 20px;
+    border-width: 4px;
+    padding: 0;
+}
+.sport:hover .ind{
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+#d6 h3, #d6 p {
+    background-color: rgba(4, 4, 4, 0.7);
+    border-radius: 100px;
+}
+#d7 h3, #d7 p {
+    background-color: rgba(4, 4, 4, 0.7);
+    border-radius: 100px;
+}
+#d8 h3, #d8 p {
+    background-color: rgba(4, 4, 4, 0.7);
+    border-radius: 50px;
+}
+.socials_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.Github,.linkedin,.twitter{
+    font-family: michroma,Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    text-align: center;
+    background-color: rgba(4, 4, 4, 0.7);
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    border: solid cyan;
+}
+.Github:hover , .linkedin:hover, .twitter:hover{
+    background-color: wheat;
+    color: rgba(4, 4, 4, 0.7);
+}
+.Github:active , .linkedin:active, .twitter:active{
+    border-color: black;
+    border-width: 5px;
+}
